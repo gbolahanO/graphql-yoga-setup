@@ -1,0 +1,20 @@
+{
+  "name": "graphql_yoga_setup",
+  "version": "1.0.0",
+  "description": "graphql-yoga server setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets=preset-env",
+    "start": "nodemon --ext js,graphql --exec babel-node src/server.js"
+  },
+  "author": "Gbolahan Olawuyi",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "graphql-yoga": "^1.16.9",
+    "nodemon": "^1.18.9"
+  }
+}
