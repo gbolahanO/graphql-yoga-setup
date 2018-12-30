@@ -14,7 +14,12 @@
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "dotenv": "^6.2.0",
     "graphql-yoga": "^1.16.9",
-    "nodemon": "^1.18.9"
+    "mysql2": "^1.6.4",
+    "nodemon": "^1.18.9",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
   }
 }

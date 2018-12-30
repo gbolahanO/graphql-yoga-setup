@@ -1,3 +1,6 @@
+require('dotenv').config({
+  path: './variables.env'
+})
 import { GraphQLServer } from 'graphql-yoga'
 
 const typeDefs = `
