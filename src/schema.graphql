@@ -1,8 +1,12 @@
+scalar Date
+
 type Post {
   title: String!
   slug: String!
   post_image: String!
   content: String!
+  createdAt: Date
+  updatedAt: Date
 }
 
 type User {
@@ -13,7 +17,7 @@ type User {
 }
 
 type Query {
-  
+  getAllPost: [Post!]
 }
 
 type Mutation {
