@@ -1,3 +1,36 @@
+type Post {
+  title: String!
+  slug: String!
+  post_image: String!
+  content: String!
+}
+
+type User {
+  firstname: String!
+  lastname: String!
+  email: String!
+  password: String!
+}
+
 type Query {
   hello: String!
+}
+
+type Mutation {
+  createPost(data: createPostInput): Post
+  createUser(data: createUserInput): User
+}
+
+input createPostInput {
+  title: String!
+  slug: String!
+  post_image: String!
+  content: String!
+}
+
+input createUserInput {
+  firstname: String!
+  lastname: String!
+  email: String!
+  password: String!
 }
